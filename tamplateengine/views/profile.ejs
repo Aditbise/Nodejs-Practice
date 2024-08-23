@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Profile Page</title>
+    </head>
+    <body>
+    <%- include('common/header')%>
+    <h1>Hi!! <%= user.Name %></h1>
+    <h2>Your Email :- <%= user.Email %></h2>
+    <h3>You live in  <%= user.City %></h3>
+    
+    
+    <ul>
+        <% user.Skill.forEach((item)=>{ %>
+            <li> <%= item %> </li>
+        <% }) %>
+        
+    </ul>
+    </body>
+</html>
